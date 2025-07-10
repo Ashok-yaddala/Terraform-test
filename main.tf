@@ -166,7 +166,7 @@ resource "aws_lb_listener_rule" "register_rule" {
 }
  
 resource "aws_instance" "home" {
-  ami                         = "ami-0900588ae829985de"
+  ami                         = "ami-0d03cb826412c6b0f"
   instance_type               = var.instance_type
   subnet_id                   = aws_subnet.subnet_a.id
   associate_public_ip_address = true
@@ -187,7 +187,7 @@ resource "aws_instance" "home" {
 }
  
 resource "aws_instance" "images" {
-  ami                         = "ami-0900588ae829985de"
+  ami                         = "ami-0d03cb826412c6b0f"
   instance_type               = var.instance_type
   subnet_id                   = aws_subnet.subnet_b.id
   associate_public_ip_address = true
@@ -210,7 +210,7 @@ EOF
 }
  
 resource "aws_instance" "register" {
-  ami                         = "ami-0900588ae829985de"
+  ami                         = "ami-0d03cb826412c6b0f"
   instance_type               = var.instance_type
   subnet_id                   = aws_subnet.subnet_c.id
   associate_public_ip_address = true
